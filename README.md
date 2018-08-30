@@ -1,5 +1,5 @@
-# Templating Node and Express Apps with EJS
+# Champagne Cuillier
 
-This code is for the tutorial on using EJS to template your Node and Express applications
+Website : Champagne Cuillier
 
-Check out the full tutorial at [coligo](https://coligo.io/templating-node-and-express-apps-with-ejs/)
+Navbartop init
