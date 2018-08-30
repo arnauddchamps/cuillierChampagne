@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #main {
+        background-color: rgb(224, 14, 14);
+        width: auto;
+        height: 100px;
+        position: relative;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    #main:after {
+        width: auto;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        height: 100px;
+        background-color: inherit;
+        transform-origin: top right;
+        transform: skewY(-3deg);
+        z-index: 1;
+
+    }
+</style>
+
+
+<div id="main">
+
+
+
+</div>
+
+</body>
+
+</html>
