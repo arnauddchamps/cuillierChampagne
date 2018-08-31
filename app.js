@@ -1,6 +1,8 @@
 // require and instantiate express
-const app = require("express")();
+var express = require("express");
+var app = express();
 
+app.use(express.static("public"));
 // fake posts to simulate a database
 const posts = [
   {
@@ -29,11 +31,7 @@ app.get("/post/:id", (req, res) => {
   })[0];
 
   // render the `post.ejs` template with the post content
-  res.render("post", {
-    author: post.author,
-    title: post.title,
-    body: post.body
-  });
+  res.render("post");
 });
 
 app.listen(8080);
