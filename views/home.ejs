@@ -20,8 +20,12 @@
             position: sitcky-top;
             z-index: 1;
             top: -150px;
-            background-color: red;
+            background-color: rgb(16, 73, 8);
             margin-left: 00px;
+        }
+
+        img {
+            background-image: url('../')
         }
     </style>
 </head>
@@ -54,10 +58,28 @@
                     </div>
                 </nav>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="test1 col-3">fsdf</div>
+                <div class="test2 col-3">sdfsd</div>
+            </div>
+
+        </div>
+
 
         <%- include('partials/navbar') %>
-
+            <div class="card" style="width: 18rem;">
+                <img src="" alt="fdf">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
             <div class="jumbotron">
+
                 <h1>All about Node</h1>
                 <p class="lead">Check out our articles below!</p>
             </div>
@@ -69,10 +91,10 @@
                         <% posts.forEach((post) => { %>
                             <a href="/post/<%= post.id %>" class="list-group-item">
                                 <h4 class="list-group-item-heading">
-                                    <%= post.title %>
+
                                 </h4>
                                 <p class="list-group-item-text">
-                                    <%= post.author %>
+
                                 </p>
                             </a>
                             <% }) %>
